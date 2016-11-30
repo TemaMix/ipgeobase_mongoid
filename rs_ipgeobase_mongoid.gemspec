@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.executables = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ["lib"]
   
-  s.add_runtime_dependency('mongoid', [">= 3.0", "< 5.0"])
+  s.add_runtime_dependency('mongoid', [">= 3.0"])
   s.required_ruby_version = '>= 1.9.2'
 
   s.add_development_dependency(%q<rspec>, [">= 2.14.0"])
